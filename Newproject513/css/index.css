@@ -1,0 +1,343 @@
+body {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  background: #ddd;
+}
+body,
+header,
+section,
+div,
+a,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+}
+img {
+  vertical-align: bottom;
+}
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+body > img {
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+  height: 800px;
+  opacity: 0.8;
+}
+#top {
+  width: 1200px;
+  margin: auto;
+  background: black;
+  color: white;
+  height: 50px;
+  padding-top: 25px;
+}
+#top .right b {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  position: relative;
+  height: 14px;
+  top: 2px;
+}
+#top div:first-child {
+  margin: 0 120px 0 50px;
+}
+#top > ul {
+  margin-bottom: 30px;
+}
+#top > ul > li {
+  width: 120px;
+  position: relative;
+}
+#top span:hover {
+  cursor: pointer;
+}
+#top i {
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 10px;
+  padding-top: -3px;
+  background: url("../imgs/sprites.png") no-repeat 0 0;
+}
+#top div:last-child {
+  margin-right: 50px;
+}
+#top div:last-child a {
+  display: inline-block;
+  padding: 0 5px;
+}
+#top li.left:hover .series {
+  opacity: 1;
+}
+#top ul.series {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  position: absolute;
+  opacity: 0;
+  top: 50px;
+  left: -10px;
+  background: black;
+  z-index: 100;
+  transition: all 0.5s linear;
+}
+#top ul.series li {
+  height: 30px;
+}
+#top ul.series a:hover {
+  color: #F7F8F8;
+}
+#top li:first-child ul.series {
+  width: 170px;
+}
+#top li:nth-child(2) ul.series {
+  width: 208px;
+}
+#top li:last-child ul.series {
+  width: 215px;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#slider_top {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+#slider_top > img {
+  position: absolute;
+  z-index: -1;
+}
+#slider_top > img.active {
+  z-index: auto;
+}
+.text {
+  margin: auto;
+}
+.text p {
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  color: red;
+  font-size: 36px;
+  margin: 20px auto;
+}
+.text p a {
+  color: red;
+}
+#part1 .picblock1 {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#part1 .cards {
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotatey(0deg);
+  transition: transform 0.4s linear;
+}
+#part1 .cards:hover {
+  transform: rotatey(180deg);
+}
+#part1 .cards > img {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+#part1 .cards img:first-child {
+  transform: translatez(0px);
+}
+#part1 .cards img + img {
+  transform: translatez(0px);
+}
+#part2 {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  margin: auto;
+}
+#part2 #picblock2 {
+  border: 3px solid white;
+  box-sizing: border-box;
+  margin: 10px auto 15px;
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 1200px;
+  height: 543px;
+  background: #000;
+}
+#part2 #picblock2 > img {
+  width: 1138px;
+  position: absolute;
+  z-index: -1;
+}
+#part2 #picblock2 > img.active {
+  z-index: auto;
+}
+#part2 #control {
+  width: 1200px;
+  position: relative;
+}
+#part2 #control img {
+  position: absolute;
+  opacity: 0.1;
+  bottom: 240px;
+}
+#part2 #control img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#part2 #control img:first-child {
+  left: 115px;
+}
+#part2 #control img:first-child + img {
+  right: -70px;
+}
+#part3 ul.clear {
+  width: 1200px;
+  margin: auto;
+}
+#part3 ul > li {
+  position: relative;
+  float: left;
+}
+#part3 ul > li div {
+  background: #00c0ff;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  z-index: 2;
+  transition: all 0.5s;
+}
+#part3 ul > li:first-child div,
+#part3 ul > li:nth-child(2) div,
+#part3 ul > li:nth-child(3) div {
+  width: 0;
+  height: 210px;
+}
+#part3 ul > li:first-child:hover div,
+#part3 ul > li:nth-child(2):hover div,
+#part3 ul > li:nth-child(3):hover div {
+  width: 400px;
+}
+#part3 ul > li:last-child div,
+#part3 ul > li:nth-child(4) div,
+#part3 ul > li:nth-child(5) div {
+  width: 400px;
+  height: 0;
+}
+#part3 ul > li:last-child:hover div,
+#part3 ul > li:nth-child(4):hover div,
+#part3 ul > li:nth-child(5):hover div {
+  height: 210px;
+}
+#box-office {
+  width: 1200px;
+  margin: 20px auto 0;
+  font-size: 16px;
+}
+#box-office .all {
+  padding-left: 30px;
+}
+#box-office .all > div {
+  margin: 10px;
+  margin-left: -15px;
+}
+#box-office .all div {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+#box-office .all li > div {
+  margin: 10px 0 20px;
+  width: 1000px;
+  height: 30px;
+  background: rgba(143, 143, 143, 0.51);
+}
+#box-office .all li > div div {
+  display: inline-block;
+  width: 0;
+  height: 30px;
+  background: rgba(143, 143, 143, 0.8);
+}
+#box-office .all span {
+  position: relative;
+  bottom: 8px;
+}
+#return {
+  width: 1200px;
+  margin: 20px auto 0;
+}
+#return a {
+  color: black;
+}
+#base {
+  margin: 30px auto 0;
+  width: 1200px;
+}
+#base ul {
+  display: flex;
+  justify-content: center;
+}
+#base ul li {
+  height: 30px;
+  line-height: 30px;
+}
+#base ul li:not(last-child) b {
+  border: 1px solid #ddd;
+  height: 14px;
+  width: 0;
+  margin: 0 15px;
+}
+#base ul li:last-child b {
+  border: none;
+}
+#base p {
+  text-align: center;
+}
+.signle {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(../imgs/bg1.jpg);
+  padding: 20px;
+}
+.double {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(../imgs/bg2.jpg);
+  padding: 20px;
+}

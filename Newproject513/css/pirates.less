@@ -1,0 +1,140 @@
+/*1.公共样式*/
+body{
+  font:14px "microsoft yahei",Arial,Helvetica,sans-serif;
+  color:#333;
+  background:#ddd;
+
+}
+body,header,section,div,a,ul,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+  padding:0;
+  margin:0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+a{
+  color:white;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover{
+  text-decoration:none;
+}
+img{
+  vertical-align:bottom;
+}
+ul{
+  list-style: none;
+}
+.left{float:left;}
+.right{float:right;}
+.clear,.clear:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*2.整体布局*/
+#top,section,#footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+//头部导航
+#top {
+  width: 1200px;
+  margin: 0 auto 20px;
+  color: white;
+  div:nth-child(2){
+    height:50px;
+  }
+  ul {
+    width: 1200px;
+    background: black;
+    position: fixed;
+    box-sizing: border-box;
+    height:50px;
+    line-height:50px;
+    margin-bottom:50px;
+    li{
+      float: left;
+      margin-left:70px;
+      a:hover{
+        color: rgba(255, 0, 0, 0.8);
+        text-shadow: 1px 1px 1px white;
+      }
+    }
+  }
+}
+#main{
+  article{
+    padding:5px;
+    margin:10px 0;
+    box-sizing: border-box;
+    border:1px solid rgba(0, 0, 0, 0.4);
+    width:900px;
+    .content{
+      margin-bottom:20px;
+      ul{
+        margin-left: 10px;
+        width: 650px;
+        li {
+          border-bottom: 1px dashed rgba(0, 0, 0, 0.91);
+          padding: 2px;
+          height: 30px;
+          line-height: 1.6;
+          p {
+            text-indent: 35px;
+            height: 56px;
+            overflow-y: scroll;
+          }
+        }
+        li:first-child{
+          color: rgba(0, 0, 255, 0.5);
+          font-size:18px;
+        }
+        li:last-child{
+          border-bottom:none;
+        }
+      }
+    }
+    .evaluate{
+      h2{
+        margin:5px 0;
+      }
+      li{
+        line-height: 1.6;
+        text-indent:35px
+      }}
+  }
+}
+#return{
+  width:1200px;
+  margin:20px auto 0;
+  a{
+    color:black;
+  }
+}
+#base{
+  margin:30px auto 0;
+  width:1200px;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      height:30px;
+      line-height: 30px;
+    }
+    li:not(last-child) b{
+      border:1px solid #ddd;
+      height:14px;
+      width:0;
+      margin:0 15px;
+    }
+    li:last-child b{
+      border: none;
+    }
+  }
+  p{
+    text-align: center;
+  }
+}

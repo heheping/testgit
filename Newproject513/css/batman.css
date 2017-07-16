@@ -1,0 +1,163 @@
+/*1.������ʽ*/
+body {
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: #333;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff0700;
+  text-decoration: underline;
+}
+img {
+  vertical-align: bottom;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+/*2.���岼��*/
+#top,
+#top-main,
+#nav,
+#banner,
+#main,
+#foot-box,
+#footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+#top {
+  width: 1200px;
+  margin: 0 auto 20px;
+  color: white;
+}
+#top div:nth-child(2) {
+  height: 50px;
+}
+#top ul {
+  width: 1200px;
+  background: black;
+  position: fixed;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+#top ul li {
+  float: left;
+  margin-left: 70px;
+}
+#top ul li a {
+  font-size: 16px;
+  color: white;
+}
+#top ul li a:hover {
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 1px 1px 1px white;
+}
+ul.lf {
+  max-width: 600px;
+  font-size: 14px;
+  margin: 10px;
+}
+ul.lf li {
+  height: 30px;
+}
+ul.lf li:first-child {
+  color: rgba(14, 0, 123, 0.67);
+  font-size: 18px;
+}
+ul.lf li:last-child {
+  height: 80px;
+  overflow-y: scroll;
+}
+.acticle {
+  background: #ddd;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+}
+div.rt {
+  width: 340px;
+  text-align: center;
+  margin-top: 40px;
+}
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.evaluate {
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.evaluate ul {
+  margin: 10px;
+  width: 490px;
+  font-size: 14px;
+}
+.evaluate ul li {
+  margin-top: 10px;
+}
+.evaluate div {
+  width: 180px;
+  align-self: center;
+}
+#return {
+  width: 120px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+/*�ײ���Ϣ*/
+#base {
+  margin-top: 50px;
+  font-size: 14px;
+}
+#base ul {
+  display: flex;
+  justify-content: center;
+}
+#base > ul li {
+  height: 30px;
+  line-height: 30px;
+}
+#base > ul li:not(last-child) b {
+  border: 1px solid #ddd;
+  height: 14px;
+  width: 0;
+  margin: 0 15px;
+}
+#base > ul li:last-child b {
+  border: none;
+}
+#base p {
+  text-align: center;
+}

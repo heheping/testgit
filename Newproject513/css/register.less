@@ -1,0 +1,176 @@
+/* Reset CSS */
+header,section,div,a,ul,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  background: #DCDDDF;
+  color: #000;
+  font: 14px Arial;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+h1{
+  font-size:28px;
+  color:#563D64;
+}
+form:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+#content {
+  margin: 60px auto;
+  border-radius: 20px;
+  background: #f9f9f9;
+  border: 2px solid #ccc;
+  padding: 25px 0 0;
+  position: relative;
+  text-align: center;
+  width: 550px;
+}
+#content h1 {
+  color: rgba(126, 126, 126, 0.9);
+  font: bold 25px Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  margin: 10px 0 30px;
+}
+#content h1:before,
+#content h1:after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  width: 35%;
+}
+#content h1:after {
+  background: rgb(126,126,126);
+  background: -moz-linear-gradient(left,  rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(left,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  right:20px;
+}
+#content h1:before {
+  background: rgb(126,126,126);
+  background: -moz-linear-gradient(right,  rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+  left: 20px;
+}
+#content form {
+  position: relative
+}
+#content form span{
+  display: inline-block;
+  width:80px;
+  text-align: left;
+  font-size: 15px;
+}
+.information,.info{
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+  transition: all 0.5s ease;
+  background: #eae7e7;
+  border: 1px solid #c8c8c8;
+  color: #777;
+  font: 14px Helvetica, Arial, sans-serif;
+  margin: 0 0 20px;
+  padding: 15px 10px 15px 15px;
+  width: 300px;
+}
+.information:focus,.info:focus {
+  box-shadow: 0 0 2px rgba(0, 153, 237, 0.6) inset;
+  background: #fff;
+  border: 1px solid rgba(0, 153, 237, 0.6);
+  outline: none;
+}
+#content .validate input{
+  margin-left:66px;
+  width: 172px;
+  +button{
+    font-size: 14px;
+    width:120px;
+    padding:13px 0;
+    margin-left:5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background:linear-gradient(to bottom, #fcfcfc 0%, #dedede 100%)
+  }
+}
+#content input[type="checkbox"]{
+  margin-left:-90px;
+}
+#content form div:last-child{
+  width:275px;
+  margin:0 auto;
+}
+#content form div:last-child:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#content form input[type="submit"] {
+  background: rgba(56, 254, 128, 0.21);
+  background: linear-gradient(top, rgba(23, 254, 165, 0.21) 0%, rgba(11, 254, 57, 0.38) 100%);
+  border-radius:5px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+  border: 1px solid rgba(4, 254, 33, 0.22);
+  color: rgb(83, 83, 83);
+  cursor: pointer;
+  float: left;
+  font: bold 16px Helvetica, Arial, sans-serif;
+  height: 40px;
+  margin: 20px 0 35px 15px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  width: 80px;
+}
+#content form input[type="submit"]:hover {
+  background: rgba(56, 254, 128, 0.91);
+  background: linear-gradient(top, rgba(23, 254, 165, 0.7) 0%, rgba(20, 254, 70, 0.7) 100%);
+}
+#content form div a {
+  color: #006980;
+  float: right;
+  font-size: 15px;
+  margin: 30px 15px 0 0;
+  text-decoration: none;
+}
+#content .yanz span~span{
+  display: inline-block;
+  color:red;
+  width:16px;
+}
+#content .yanz>div.vali_info{
+  position:relative;
+  top:-10px;
+  left:150px;
+  text-align:left ;
+}
+#content .yanz>div:last-child{
+  position:relative;
+  top:-10px;
+  left:10px;
+  text-align:left ;
+  color:red;
+}
+//.vali_info{/* 页面初始，验证消息不显示 */
+//  display:none;
+//}
+.err_info{/* 页面初始，验证消息不显示 */
+  display:none;
+}
+.agrument{
+  display:none;
+}
